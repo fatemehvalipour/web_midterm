@@ -1,0 +1,27 @@
+body{
+    background-image: url("background.jpg");
+}
+
+.mainDiv{
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-style: outset;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.secondaryDiv{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.savedAnswer{
+    border-style: dotted;
+    padding: 10px;
+    border-radius: 15px;
+}
