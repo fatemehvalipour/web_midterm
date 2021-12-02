@@ -10,7 +10,7 @@ body{
     margin-right: auto;
     display: flex;
     border-style: outset;
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: rgb(255, 255, 255, 0.4);
     padding: 20px;
     border-radius: 15px;
 }
@@ -24,4 +24,11 @@ body{
     border-style: dotted;
     padding: 10px;
     border-radius: 15px;
+}
+
+button{
+    border-radius: 10px;
+    padding: 5px 12px;
+    width: 100px;
+    margin-bottom: 5px;
 }

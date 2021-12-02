@@ -3,9 +3,7 @@
 <html>
 
 <head>
-<title>Our Funky HTML Page</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
+<title>Mr. or Ms.?</title>
 <link rel="stylesheet" href="main.css">
 </head>
 
@@ -16,24 +14,26 @@
             <form>
                 <label for="name" style="margin-right: 10px;">Name:</label>
                 <input type="text" id="name" name="name" style="margin-bottom: 10px; border-radius: 5px; padding: 6px 10px; border: 2px solid gray;"><br>
-                <input type="radio" id="male" name="male" value="Male">
+                <input type="radio" id="male" name="maleFemale" value="Male">
                 <label for="male">Male</label><br>
-                <input type="radio" id="female" name="female" value="Female" style="margin-bottom: 20px;">
+                <input type="radio" id="female" name="maleFemale" value="Female" style="margin-bottom: 20px;">
                 <label for="female">Female</label><br>
             </form>
-              <button type="button" style="margin-bottom: 10px; border-radius: 10px; padding: 5px 12px; width: 100px;">Submit</button><br>
-              <button type="button" style="margin-bottom: 10px; border-radius: 10px; padding: 5px 12px; width: 100px;">Save</button>
+              <button onclick="submit()" id="submit" type="button">Submit</button><br>
+              <button onclick="save()" id="save" type="button">Save</button>
         </div>
         <div class="secondaryDiv">
             <h1>Prediction </h1>
-            <p>gender</p>
-            <p>probability</p>
-            <div class="savedAnswer">
-                <h1>Saved Answer</h1>
-                <button type="button" style="border-radius: 10px; padding: 5px 12px; width: 100px;">Clear</button><br>
+            <p id="gender">gender</p>
+            <p id="probability">probability</p>
+            <div id="saved" class="savedAnswer">
+                <h2>Saved Answer</h2>
+                <p id="SavedAnswer"></p>
+                <button onclick="clearRecord()" id="clear" type="button">Clear</button><br>
             </div>
         </div>
     </div>
+    <script src="logic.js"></script>
 </body>
 
 </html>
