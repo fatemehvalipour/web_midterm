@@ -30,7 +30,11 @@ function prediction(name){
     // fetch the request 
     fetch('https://api.genderize.io/?name=' + name)
     .then(Response => Response.json())
-    .catch(error => console.error("network error"))
+    .catch(error => 
+        {
+            document.getElementById("gender").innerHTML = "Network Error"
+            document.getElementById("probability").innerHTML = "Network Error"
+        })
     .then(data =>
         {
             // set variables from the response
