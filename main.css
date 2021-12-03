@@ -1,7 +1,11 @@
+/* Adds image to background*/
 body{
     background-image: url("background.jpg");
 }
 
+/* propertis of main part in the center - border-radius: defines radius of corners - padding: space needed around an element's content - 
+background-color: rgb parameters + 4th parameter is for transparency - border-style: style of the border - display: flex according to project description - 
+margin: distance from right, left and, top element - width: size of the box that should fit content*/
 .mainDiv{
     margin: 0 auto;
     width: fit-content;
@@ -15,17 +19,22 @@ body{
     border-radius: 15px;
 }
 
+/* for form and result part -  margin-right and margin-left: distance from right and left element*/
 .secondaryDiv{
     margin-right: 20px;
     margin-left: 20px;
 }
 
+/* propertis of savedAnswer part - border-style: dotted for savedAnswer Box - padding: space needed around an element's content - 
+border-radius: defines radius of corners */
 .savedAnswer{
     border-style: dotted;
     padding: 10px;
     border-radius: 15px;
 }
 
+/* width: size of buttons - border-radius: defines radius of corners - 
+padding: space needed around an element's content - margin-bottom: distance between this element and other elements from bottom*/
 button{
     border-radius: 10px;
     padding: 5px 12px;
